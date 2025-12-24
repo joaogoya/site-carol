@@ -1,0 +1,106 @@
+/* ESTILO DO NAP (ESQUERDA) */
+.nap-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .nap-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-light);
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        i {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .nap-content {
+        display: flex;
+        flex-direction: column;
+
+        .nap-label {
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--dark);
+        }
+
+        .nap-text {
+            font-size: 1rem;
+            color: var(--secondary);
+            font-weight: 300;
+        }
+    }
+}
+
+/* FORMULÁRIO (DIREITA) */
+.contact-form {
+    .custom-input {
+        border: none;
+        border-bottom: 2px solid #eee;
+        border-radius: 0;
+        padding: 12px 0;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 300;
+        transition: 0.3s;
+
+        &:focus {
+            box-shadow: none;
+            border-color: var(--primary);
+            background-color: transparent;
+        }
+    }
+
+    .btn-contato-main {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .btn-contato-link {
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+/* Redes sociais no contato */
+.nap-social {
+    .top-social {
+        a {
+            color: var(--secondary);
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+}

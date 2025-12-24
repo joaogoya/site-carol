@@ -1,0 +1,117 @@
+/* SEÇÃO SOBRE */
+.tt-primary {
+    color: #c29d59 !important; /* Seu @primary */
+}
+
+/* Título de Seção */
+.small-lettering {
+    color: #c29d59;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-title-simple {
+    h2 {
+        color: #1a1917; /* @dark */
+        font-weight: 700;
+    }
+}
+
+.title-divider {
+    width: 60%;
+    height: 2px;
+    background-color: #c29d59;
+    margin-top: 15px;
+}
+
+/* Ícones Redondos */
+.icon-box-primary {
+    background-color: #c29d59;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+
+    i {
+        stroke: #ffffff;      /* Cor da linha (Branco) */
+        stroke-width: 1.5px;  /* Espessura da linha */
+        fill: none;           /* Interior transparente */
+        width: 32px;          /* Tamanho do ícone */
+        height: 32px;
+    }
+}
+
+.highlight-text {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #3d3a35; /* @extraDarkGray */
+}
+
+/* Imagens Sobrepostas */
+.overlapping-images-wrapper {
+    position: relative;
+    padding-bottom: 60px; /* Espaço para o deslocamento da imagem da frente */
+
+    .image-back {
+        img {
+            width: 90%;
+            height: 550px;
+            object-fit: cover;
+            margin-left: auto;
+            display: block;
+        }
+    }
+
+    .image-front {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 55%;
+        z-index: 5;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+        }
+    }
+}
+
+/* Ajustes Mobile (Usando a ID que você definiu) */
+#sobre-mobile {
+    @media (max-width: 991px) {
+        .image-back img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image-front {
+            width: 60%;
+            bottom: -20px;
+            left: -10px;
+
+            img {
+                border-width: 5px;
+            }
+        }
+
+        .section-title-simple h2 {
+            font-size: 2rem;
+        }
+
+        .icon-box-primary {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

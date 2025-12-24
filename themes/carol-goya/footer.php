@@ -104,7 +104,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/template_sctipt.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/dist/scripts.min.js"></script>
   
   </body>
     <?php wp_footer(); ?>

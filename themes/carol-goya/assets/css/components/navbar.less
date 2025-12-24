@@ -1,0 +1,267 @@
+
+
+// /* TOP BAR (Barra Utilitária) */
+
+// .top-bar {
+
+//     background-color: #3d3a35; /* Variação mais clara do secondary */
+
+//     color: var(--info);
+
+//     padding: 8px 0;
+
+//     font-size: 13px;
+
+//     letter-spacing: 1px;
+
+// }
+
+
+
+// .top-bar a {
+
+//     color: var(--info);
+
+//     text-decoration: none;
+
+//     margin-left: 15px;
+
+//     transition: 0.3s;
+
+// }
+
+
+
+// .top-bar a:hover {
+
+//     color: var(--primary);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* NAVBAR */
+
+// .main-nav {
+
+//     background-color: var(--dark) !important;
+
+//     padding: 15px 0;
+
+// }
+
+
+
+// .logo {
+
+//     font-family: 'Playfair Display', serif;
+
+//     color: var(--light) !important;
+
+//     font-size: 24px;
+
+//     letter-spacing: 2px;
+
+//     font-weight: 700;
+
+// }
+
+
+
+// .logo span {
+
+//     color: var(--primary);
+
+//     font-style: italic;
+
+//     font-weight: 400;
+
+// }
+
+
+
+// .nav-link {
+
+//     color: var(--info) !important;
+
+//     font-size: 14px;
+
+//     text-transform: uppercase;
+
+//     letter-spacing: 2px;
+
+//     margin: 0 10px;
+
+//     transition: 0.3s;
+
+// }
+
+
+
+// .nav-link:hover {
+
+//     color: var(--primary) !important;
+
+// }
+
+
+
+// /* Customização do Hamburguer */
+
+// .custom-toggler.navbar-toggler {
+
+//     border-color: rgba(255,255,255,0.2);
+
+// }
+
+
+
+// .custom-toggler .navbar-toggler-icon {
+
+//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3Base path stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+// }
+
+
+
+// @media (max-width: 991px) {
+
+//     .navbar-collapse {
+
+//         background-color: #3d3a35;
+
+//         padding-bottom: 20px;
+
+//     }
+
+
+
+// }
+
+
+
+
+
+
+/* TOP BAR (Barra Utilitária) */
+.top-bar {
+    background-color: #3d3a35; /* Variação mais clara do secondary */
+    color: var(--info);
+    padding: 8px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    a {
+        color: var(--info);
+        text-decoration: none;
+        margin-left: 15px;
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}
+
+/* NAVBAR */
+.main-nav {
+    background-color: var(--dark) !important;
+    padding: 15px 0;
+
+    .logo {
+        font-family: 'Playfair Display', serif;
+        color: var(--light) !important;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: 700;
+
+        span {
+            color: var(--primary);
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    .nav-link {
+        color: var(--info) !important;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 10px;
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--primary) !important;
+        }
+    }
+
+    /* Customização do Hamburguer */
+    .custom-toggler {
+        &.navbar-toggler {
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3Base path stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background-color: #3d3a35;
+            padding-bottom: 20px;
+        }
+    }
+}

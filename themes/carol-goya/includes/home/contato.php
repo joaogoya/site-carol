@@ -72,7 +72,7 @@
                     <div class="mb-4">
                         <textarea class="form-control custom-input" rows="5" placeholder="Como podemos ajudar?"></textarea>
                     </div>
-                    <button type="submit" class="btn-portfolio-main py-3">Enviar Mensagem</button>
+                    <button type="submit" class="btn-contato-main py-3">Enviar Mensagem</button>
                 </form>
             </div>
         </div>

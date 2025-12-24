@@ -7,7 +7,7 @@
     <meta name="author" content="Pipeline Digital">
     <meta name="generator" content="Vscode">
     <meta name="rating" content="general">
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>">
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/assets/dist/style.min.css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/assets/template/img/alteres.png">
 

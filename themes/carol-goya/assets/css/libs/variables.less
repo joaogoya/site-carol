@@ -1,0 +1,70 @@
+/* VARIÁVEIS BASEADAS NA SUA PALETA */
+:root {
+    --primary: #c29d59;
+    --secondary: #757067;
+    --info: #f5f3f0;
+    --dark: #1a1917;
+    --light: #ffffff;
+    --extraDarkGray: #3d3a35;
+    --primary-light: #f8f4eb; /* O fundo "fraquinho" para a seção */
+}
+
+/* GERAL */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: var(--extraDarkGray);
+    background-image: url('https://www.transparenttextures.com/patterns/linen-paper.png');
+    background-color: var(--light);
+}
+
+h1, h2, h3, .playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.p-section-fone {
+    padding: 20px;
+}
+
+section {
+    position: relative;
+    z-index: 1; /* Todas as seções agora têm o mesmo nível de base */
+    overflow: hidden; /* Garante que a marca d'água não empurre a lateral */
+}
+
+/* TÍTULO ELABORADO (REGRAS GLOBAIS) */
+.section-title-elaborated {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 40px;
+    z-index: 10 !important;
+
+    .title-bg-text {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: -1 !important;
+        font-family: 'Mulish', sans-serif;
+        color: rgba(26, 25, 23, 0.05) !important;
+        display: block !important;
+
+        @media (max-width: 768px) {
+            font-size: 14vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+        padding-top: 30px;
+    }
+}

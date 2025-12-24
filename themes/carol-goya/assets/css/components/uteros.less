@@ -1,0 +1,66 @@
+/* AJUSTE PARA IMAGEM SOBREPOSTA À DIREITA */
+.uteros-images {
+    position: relative; // Garante o contexto para as imagens absolutas
+
+    .image-back img {
+        margin-left: 0; /* Alinha a imagem de fundo à esquerda */
+        margin-right: auto;
+    }
+
+    .image-front-right {
+        position: absolute;
+        bottom: -30px;
+        right: 0; /* Alinha à direita, em direção ao texto */
+        width: 55%;
+        z-index: 5;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1; /* Garante que seja quadrada */
+            object-fit: cover;
+            border: 5px solid #ffffff;
+        }
+
+        @media (max-width: 991px) {
+            width: 60%;
+            bottom: -20px;
+            right: -10px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-bottom: 40px;
+    }
+}
+
+/* ESTILO DA LISTA COM DOTS DISCRETOS */
+.custom-dot-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding-left: 25px; /* Espaço para o dot */
+        margin-bottom: 12px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 1rem;
+        color: var(--secondary);
+        line-height: 1.5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 0.95rem;
+        }
+    }
+}
