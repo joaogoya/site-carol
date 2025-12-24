@@ -17,7 +17,12 @@ const paths = {
   },
   scripts: {
     // Escuta a raiz da js e qualquer subpasta que vier a existir
-    src: './assets/js/**/*.js',               
+   src: [
+      './assets/js/template/bootstrap.js', // Caminho exato do bootstrap
+      './assets/js/template/lucide.js', // Caminho exato do bootstrap
+      './assets/js/template/template_sctipt.js',        // Seu script principal
+      './assets/js/**/*.js'                     // Qualquer outro arquivo JS
+    ],       
     dest: './assets/dist/'
   }
 };
