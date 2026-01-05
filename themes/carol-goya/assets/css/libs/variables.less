@@ -15,8 +15,29 @@ html, body {
     width: 100%;
 }
 
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./../../assets/fonts/play_fair/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+    url('./../../assets/fonts/play_fair/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./../../assets/fonts/muli/muli-webfont.woff2') format('woff2'),
+    url('./../../assets/fonts/muli/muli-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Muli', sans-serif;
     color: var(--extraDarkGray);
     background-image: url('https://www.transparenttextures.com/patterns/linen-paper.png');
     background-color: var(--light);
@@ -54,7 +75,7 @@ section {
         text-transform: uppercase;
         white-space: nowrap;
         z-index: -1 !important;
-        font-family: 'Mulish', sans-serif;
+        font-family: 'Muli', sans-serif;
         color: rgba(26, 25, 23, 0.05) !important;
         display: block !important;
 

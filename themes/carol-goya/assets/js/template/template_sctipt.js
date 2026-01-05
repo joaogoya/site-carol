@@ -1,34 +1,22 @@
-
-
-
-
 // Efeito de sombra na Navbar ao rolar a página (UX)
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.main-nav');
     if (window.scrollY > 50) {
+
         nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
+
+
+        // Adiciona a classe para o LESS poder estilizar o resto (altura, cores, etc)
+        nav.classList.add('navbar-scrolled');
+
+        
     } else {
         nav.style.boxShadow = 'none';
+
+        // Remove a classe
+        nav.classList.remove('navbar-scrolled');
     }
 });
-
-// // Inicializa os ícones do Lucide
-// lucide.createIcons();
-
-// //spinner
-// window.addEventListener("load", function() {
-//     const preloader = document.getElementById("preloader");
-//     // Adiciona a classe que faz o fade-out
-//     preloader.classList.add("loader-hidden");
-    
-//     // Opcional: inicializa os ícones do Lucide aqui também
-//     if (typeof lucide !== 'undefined') {
-//         lucide.createIcons();  
-//     }
-// });
-
-
-
 
 window.addEventListener("load", function() {
     const preloader = document.getElementById("preloader");
@@ -63,3 +51,4 @@ window.addEventListener("load", function() {
         lucide.createIcons();
     }
 });
+
